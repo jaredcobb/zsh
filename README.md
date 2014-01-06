@@ -13,7 +13,9 @@ Installation (ssh)
 
 Add the oh-my-zsh submodule
 
-    git submodule add https://github.com/robbyrussell/oh-my-zsh.git
+	cd ~/zsh
+    git submodule init
+	git submodule update
 
 Symlinks
 
