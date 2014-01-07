@@ -65,6 +65,15 @@ tunnel() {
    sudo ssh -fND localhost:21 $1
 }
 
+# customize the ~/.ssh/config settings to force git to use proxy
+tunnelgit() {
+	if [ "$1" == "false" ]; then
+		ln -sfn ~/config/ssh_config ~/.ssh/config
+	else
+		ln -sfn ~/config/ssh_config_with_proxy ~/.ssh/config
+	fi
+}
+
 untar() {
 	tar -xzvf $1
 }
