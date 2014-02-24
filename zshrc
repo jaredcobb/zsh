@@ -50,7 +50,6 @@ export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
 
 alias l='ls -aGhlp'
 alias prune='git remote prune origin'
-alias s='tig status'
 alias t='tig'
 
 ### FUNCTIONS ###
