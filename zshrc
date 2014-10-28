@@ -34,7 +34,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump gitfast git-extras zsh-syntax-highlighting history-substring-search battery brew bundler gem npm osx web-search)
+plugins=(autojump gitfast git-extras zsh-syntax-highlighting history-substring-search battery brew gem npm osx web-search)
 
 source $ZSH/oh-my-zsh.sh
 
