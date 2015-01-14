@@ -91,3 +91,5 @@ setopt NO_NOMATCH
 # use vi for shell command line editing
 # note: this breaks up/down arrow history autocompletion
 # bindkey -v
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
