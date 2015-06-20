@@ -54,9 +54,9 @@ alias t='tig'
 
 ### FUNCTIONS ###
 
-# delete local branches that start with the name "local-"
-gitdelete() {
-    git for-each-ref --format="%(refname:short)" refs/heads/local-\* | xargs git branch -D
+# delete local branches that start with the name "case/"
+deletecases() {
+    git for-each-ref --format="%(refname:short)" refs/heads/case/\* | xargs git branch -D
 }
 
 # create a proxy through shell account (local machine only)
