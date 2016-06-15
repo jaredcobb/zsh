@@ -42,9 +42,11 @@ source $ZSH/oh-my-zsh.sh
 
 ### EXPORTS ###
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:/usr/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:/usr/bin:$HOME/Development/vagrant-local/www/phpcs/scripts:$PATH
 export JAVA_HOME=/Library/Java/Home
 export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+# broadway
+# export PATH=$HOME/broadway/bin:$PATH
 
 ### ALIASES ###
 
