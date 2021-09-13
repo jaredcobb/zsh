@@ -42,8 +42,8 @@ source $ZSH/oh-my-zsh.sh
 
 ### EXPORTS ###
 
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:/usr/bin:$HOME/Development/vagrant-local/www/phpcs/scripts:$PATH
-export JAVA_HOME=/Library/Java/Home
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:/usr/bin:$HOME/.composer/vendor/bin:$PATH
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
 # broadway
 # export PATH=$HOME/broadway/bin:$PATH
@@ -95,3 +95,12 @@ setopt NO_NOMATCH
 # bindkey -v
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# BEGIN SNIPPET: Platform.sh CLI configuration
+HOME=${HOME:-'/Users/jared'}
+export PATH="$HOME/"'.platformsh/bin':"$PATH"
+if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
