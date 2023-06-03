@@ -42,11 +42,22 @@ source $ZSH/oh-my-zsh.sh
 
 ### EXPORTS ###
 
+<<<<<<< Updated upstream
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:/usr/bin:$HOME/.composer/vendor/bin:$PATH
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+=======
+export PATH=$HOME/bin:$HOME/bin/phpcs/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:/usr/bin:$HOME/.composer/vendor/bin/:$PATH
+export JAVA_HOME=/Library/Java/Home
+>>>>>>> Stashed changes
 export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
-# broadway
-# export PATH=$HOME/broadway/bin:$PATH
+
+# Data Harmonization
+export NOTEBOOK_UID=$UID
+export NOTEBOOK_WORKING_DIR="/Users/jared/code/healthcare-data-harmonization"
+export NOTEBOOK_FUNCTION_LIBRARY_DIR="$NOTEBOOK_WORKING_DIR/mapping_configs/hl7v2_fhir_r4"
+export NOTEBOOK_SERVICE_ACCOUNT_FILENAME="key.json"
+export NOTEBOOK_SERVICE_ACCOUNT_DIR="/Users/jared/key"
+export GOOGLE_APPLICATION_CREDENTIALS="$NOTEBOOK_SERVICE_ACCOUNT_DIR/$NOTEBOOK_SERVICE_ACCOUNT_FILENAME"
 
 ### ALIASES ###
 
@@ -92,15 +103,33 @@ setopt NO_NOMATCH
 
 # use vi for shell command line editing
 # note: this breaks up/down arrow history autocompletion
-# bindkey -v
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+<<<<<<< Updated upstream
 
 # BEGIN SNIPPET: Platform.sh CLI configuration
 HOME=${HOME:-'/Users/jared'}
 export PATH="$HOME/"'.platformsh/bin':"$PATH"
 if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
+=======
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+>>>>>>> Stashed changes
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+<<<<<<< Updated upstream
+=======
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jared/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jared/bin/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jared/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jared/bin/google-cloud-sdk/completion.zsh.inc'; fi
+>>>>>>> Stashed changes
