@@ -34,7 +34,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(autojump gitfast git-extras history-substring-search battery brew gem npm osx web-search)
+plugins=(autojump gitfast git-extras history-substring-search gem npm yarn heroku)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -42,13 +42,8 @@ source $ZSH/oh-my-zsh.sh
 
 ### EXPORTS ###
 
-<<<<<<< Updated upstream
-export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:/usr/bin:$HOME/.composer/vendor/bin:$PATH
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-=======
 export PATH=$HOME/bin:$HOME/bin/phpcs/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/share/npm/bin:/usr/bin:$HOME/.composer/vendor/bin/:$PATH
 export JAVA_HOME=/Library/Java/Home
->>>>>>> Stashed changes
 export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
 
 # Data Harmonization
@@ -108,21 +103,10 @@ bindkey '^R' history-incremental-search-backward
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-<<<<<<< Updated upstream
-
-# BEGIN SNIPPET: Platform.sh CLI configuration
-HOME=${HOME:-'/Users/jared'}
-export PATH="$HOME/"'.platformsh/bin':"$PATH"
-if [ -f "$HOME/"'.platformsh/shell-config.rc' ]; then . "$HOME/"'.platformsh/shell-config.rc'; fi # END SNIPPET
-=======
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
->>>>>>> Stashed changes
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-<<<<<<< Updated upstream
-=======
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -132,4 +116,3 @@ if [ -f '/Users/jared/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jared
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jared/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jared/bin/google-cloud-sdk/completion.zsh.inc'; fi
->>>>>>> Stashed changes
